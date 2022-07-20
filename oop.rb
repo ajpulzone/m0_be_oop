@@ -125,14 +125,60 @@ puts falcor.is_hungry
 
 
 #  Write a Hobbit class
+class Hobbit
+  attr_reader :name, :disposition, :age, :is_adult, :is_old, :has_ring
+  def initialize(name, disposition)
+    @name = name
+    @disposit
+    @disposition = disposition
+    @age = 32
+    @is_adult = false
+    @is_old = false
+    @has_ring = false
+  end
+
+  def birthday
+    @age += 1
+    if @age >= 33 && @age < 101
+      @is_adult = true
+    elsif @age >= 101
+      @is_adult = true
+      @is_old = true
+    end
+  end
+
+  def ring
+      @name == "Frodo"
+      @has_ring = true
+  end
+end
+
+sam = Hobbit.new("Frodo", "Jolly")
+
+puts sam.name
+puts sam.disposition
+puts sam.age
+puts sam.ring
+sam.birthday
+puts sam.age
+puts sam.is_adult
+puts sam.is_old
+#puts sam.aging
+
+
+
+
+
+
+
 #  it should have a dynamic name attribute (string)
 #  it should have a dynamic disposition attribute (string)
 #  it should have an age attribute that defaults to 0
-#  it should have a celebrate_birthday method. When called, the
-# age increases by 1
+#  it should have a celebrate_birthday method.
+# When called, the age increases by 1
 #  it should have an is_adult attribute (boolean) that is false
-# by default. once a
-# Hobbit is 33, it should be an adult
+# by default.
+# once a Hobbit is 33, it should be an adult
 #  it should have an is_old attribute that defaults to false.
 # once a Hobbit is 101, it is old.
 #  it should have a has_ring attribute. If the Hobbit's name is
