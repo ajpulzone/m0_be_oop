@@ -22,12 +22,12 @@ end
 
 puddin_unicorn = Unicorn.new("Puddin")
 
-# puts puddin_unicorn.name
-# puts puddin_unicorn.color
-# unicorn_atributes = [puddin_unicorn.name, puddin_unicorn.color]
+puts puddin_unicorn.name
+puts puddin_unicorn.color
+unicorn_atributes = [puddin_unicorn.name, puddin_unicorn.color]
 
 puts puddin_unicorn.say("I am a unicorn")
-# puts unicorn_atributes
+puts unicorn_atributes
 # # it should have a dynamic name attribute
 # # it should have a color attribute, that is silver by default
 # # it should have a method called "say"
