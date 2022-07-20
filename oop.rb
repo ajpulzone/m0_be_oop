@@ -1,33 +1,33 @@
 # # Write a class called Unicorn
-# # class Unicorn #class name
-# #   def initialize (color, horn_length, height)
-# #     @color = "Silver"
-# #     @horn_length = horn_length
-# #     @height = 15
-# #     @horn_color = horn_color
-# #   end
-# # end
-#
-# class Unicorn
-#   attr_reader :name, :color
-#   def initialize(name)
-#     @name = name
-#     @color = "silver"
-#   end
-#
-#   def say(message)
-#     "*~*#{message}*~*"
+# class Unicorn #class name
+#   def initialize (color, horn_length, height)
+#     @color = "Silver"
+#     @horn_length = horn_length
+#     @height = 15
+#     @horn_color = horn_color
 #   end
 # end
-#
-# puddin_unicorn = Unicorn.new("Puddin")
-#
-# # puts puddin_unicorn.name
-# # puts puddin_unicorn.color
-# # unicorn_atributes = [puddin_unicorn.name, puddin_unicorn.color]
-#
-# puts puddin_unicorn.say("I am a unicorn")
-# # puts unicorn_atributes
+
+class Unicorn
+  attr_reader :name, :color
+  def initialize(name)
+    @name = name
+    @color = "silver"
+  end
+
+  def say(message)
+    "*~*#{message}*~*"
+  end
+end
+
+puddin_unicorn = Unicorn.new("Puddin")
+
+# puts puddin_unicorn.name
+# puts puddin_unicorn.color
+# unicorn_atributes = [puddin_unicorn.name, puddin_unicorn.color]
+
+puts puddin_unicorn.say("I am a unicorn")
+# puts unicorn_atributes
 # # it should have a dynamic name attribute
 # # it should have a color attribute, that is silver by default
 # # it should have a method called "say"
@@ -38,36 +38,27 @@
 #
 #
 # #  Write a class called Vampire
-# # class Vampire #class name
-# #   def intialize(name, pet, thirsty, drink)
-# #     @name = "Dracula"
-# #     @pet = "Bat"
-# #     @thirsty = true
-# #     thirsty.drink = @thirsty(false)
-# #   end
-# # end
-# class Vampire
-#   attr_reader :name, :pet, :thirsty
-#   def initialize(name, pet = "bat")
-#     @name = name
-#     @pet = pet
-#     @thirsty = true
-#   end
-#
-#   def drink
-#     @thirsty = false
-#   end
-#
-# end
-#
-# edward = Vampire.new("Edward", "Fox")
-#
-# puts edward.name
-# puts edward.pet
-# puts edward.thirsty
-#
-# puts edward.drink
-# puts edward.thirsty
+class Vampire
+  attr_reader :name, :pet, :thirsty
+  def initialize(name, pet = "bat")
+    @name = name
+    @pet = pet
+    @thirsty = true
+  end
+
+  def drink
+    @thirsty = false
+  end
+end
+
+edward = Vampire.new("Edward", "Fox")
+
+puts edward.name
+puts edward.pet
+puts edward.thirsty
+
+puts edward.drink
+puts edward.thirsty
 # #  it should have a dynamic name attribute
 # #  it should have a pet attribute, that is a bat, by default BUT it
 # # could be dynamic if info is passed in initially
@@ -95,8 +86,6 @@ class Dragon
     end
  end
 
-
-
 falcor = Dragon.new("Falcor", "Bastian","white")
 
 # puts falcor
@@ -105,12 +94,9 @@ puts falcor.rider
 puts falcor.color
 puts falcor.is_hungry
 
-# if eat.count >= 4
-# @is_hungry = false
-# end
 
-# falcor.eat
-# puts falcor.is_hungry
+falcor.eat
+puts falcor.is_hungry
 falcor.eat
 falcor.eat
 falcor.eat
